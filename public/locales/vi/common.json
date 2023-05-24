@@ -1,0 +1,56 @@
+{
+  "header": {
+    "title": "Chào mừng...!",
+    "news": "Tin tức",
+    "searchPlaceholder": "Tìm kiếm trên CMS",
+    "action": {
+      "account": "Tài khoản",
+      "logout": "Đăng xuất",
+      "profile": "Thông tin của tôi"
+    },
+    "lang": {
+      "vi": "Vietnam",
+      "en": "English",
+      "ja": "Japanese"
+    }
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "pages": "Pages",
+    "product": "Product",
+    "calendar": "Calendar"
+  },
+  "searchFor": "Kết quả tìm kiếm cho",
+  "noData": "Không có dữ liệu",
+  "nothingShow": "Đã đến cuối trang",
+  "loading": "Đang tải...",
+  "resultsHashtag": "Kết quả cho hashtag",
+  "footer": {
+    "service": "Dịch vụ",
+    "partner": "Đối tác",
+    "socialMedia": "Mạng xã hội",
+    "about": "Thông tin",
+    "contact": "Liên hệ",
+    "faqs": "Câu hỏi thường gặp",
+    "terms": "Điều khoản sử dụng",
+    "allRightReserved": "Đã đăng ký bản quyền",
+    "cmsMobile": "CMS trên thiết bị di động"
+  },
+  "blogs": {
+    "newestBlogs": "Bài viết mới nhất",
+    "popularBlogs": "Bài viết phổ biến",
+    "listTags": "Danh sách hastags",
+    "allBlogs": "Tất cả bài viết",
+    "publishedOn": "Xuất bản ngày",
+    "relatedBlogs": "Bài viết liên quan"
+  },
+  "comments": {
+    "comments": "Bình luận",
+    "writeComments": "Viết một bình luận:",
+    "send": "Gửi",
+    "name": "Tên",
+    "email": "Email",
+    "content": "Nội dung"
+  },
+  "share": "Chia sẻ:"
+}

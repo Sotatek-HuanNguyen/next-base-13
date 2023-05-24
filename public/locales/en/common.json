@@ -1,0 +1,56 @@
+{
+  "header": {
+    "title": "Welcome to...!",
+    "news": "News",
+    "searchPlaceholder": "Searching on CMS",
+    "action": {
+      "account": "Account",
+      "logout": "Logout",
+      "profile": "My profile"
+    },
+    "lang": {
+      "vi": "Vietnam",
+      "en": "English",
+      "ja": "Japanese"
+    }
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "pages": "Pages",
+    "product": "Product",
+    "calendar": "Calendar"
+  },
+  "searchFor": "Search for",
+  "noData": "No data available",
+  "nothingShow": "Nothing more to show",
+  "loading": "Loading...",
+  "resultsHashtag": "Results for hashtag",
+  "footer": {
+    "service": "Service",
+    "partner": "Partner",
+    "socialMedia": "Social media",
+    "about": "About",
+    "contact": "Contact",
+    "faqs": "FAQs",
+    "terms": "Terms of use",
+    "allRightReserved": "All rights reserved",
+    "cmsMobile": "CMS on mobile"
+  },
+  "blogs": {
+    "newestBlogs": "Newest blogs",
+    "popularBlogs": "Popular blogs",
+    "listTags": "List tags",
+    "allBlogs": "All blogs",
+    "publishedOn": "Published on",
+    "relatedBlogs": "Related blogs"
+  },
+  "comments": {
+    "comments": "Comments",
+    "writeComments": "Write a comment:",
+    "send": "Send",
+    "name": "Name",
+    "email": "Email",
+    "content": "Content"
+  },
+  "share": "Share:"
+}

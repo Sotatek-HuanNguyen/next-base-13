@@ -1,0 +1,134 @@
+/* purgecss start ignore */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+html {
+  font-family: Pretendard, Roboto, sans-serif;
+  --scrollbarBG: #ffffff00;
+  --thumbBG: #b8b8b8;
+}
+
+body {
+  @apply bg-gray-060;
+  @apply font-light;
+  @apply text-sm;
+  @apply text-black-500;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  & {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+  }
+}
+
+p {
+  @apply text-black-500;
+}
+
+::selection {
+  background: rgba(45, 170, 219, 0.3);
+}
+
+.common-no-scroll-bar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.common-no-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+// Link primary animation
+.animation-hover:after {
+  background: none repeat scroll 0 0 transparent;
+  content: '';
+  height: 2px;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  @apply w-0 bg-primary left-0 block bottom-0 absolute;
+}
+.animation-active:after {
+  @apply left-0 w-full;
+}
+.animation-hover:hover:after {
+  @apply left-0 w-full;
+}
+
+// link
+.animation-d-hover:after {
+  background: none repeat scroll 0 0 transparent;
+  content: '';
+  height: 2px;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  @apply w-0 bg-white-500 left-1/2 block bottom-0 absolute;
+}
+.animation-d-active:after {
+  @apply left-0 w-full;
+}
+.animation-d-hover:hover:after {
+  @apply left-0 w-full;
+}
+
+li.custom-list:before {
+  content: '\2022'; /* bullet point, for screen readers */
+  text-indent: -9999999px; /* move the bullet point out of sight */
+
+  width: 0.4em;
+  height: 1em;
+  background-repeat: no-repeat;
+
+  background-size: 0.4em 0.7em;
+  background-position: 0 0.3em;
+  font-size: 300%;
+  top: -0.35em;
+  @apply absolute block;
+}
+li.circle-check:before {
+  background-image: url('/assets/Icon/checklist.svg');
+  left: -0.7em;
+  top: -0.4em;
+}
+li.check:before {
+  left: -0.5em;
+  background-image: url('/assets/Icon/jam_check.svg');
+  top: -0.5em;
+  font-size: 400%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+@layer base {
+  h1 {
+    @apply font-bold text-2xl;
+  }
+  h2 {
+    @apply font-bold text-xl;
+  }
+  h3 {
+    @apply font-bold text-lg;
+  }
+}

@@ -6,17 +6,57 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:check": "eslint . --ext ts --ext tsx --ext js",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js --fix && stylelint '**/*.css' --fix",
+    "prettier": "prettier --check \"(*.tsx|*.ts|*.css|*.scss)\"",
+    "prettier:fix": "prettier --write \"(*.tsx|*.ts|*.css|*.scss)\"",
+    "prepare": "husky install",
+    "postinstall": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
+    "next-redux-wrapper": "^8.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-redux": "^8.0.5",
+    "redux-persist": "^6.0.0",
     "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^17.6.3",
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.5",
+    "@typescript-eslint/parser": "^5.59.5",
+    "autoprefixer": "^10.4.14",
+    "babel-eslint": "^10.1.0",
+    "commitlint": "^17.6.3",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
+    "i18next": "^22.4.15",
+    "lint-staged": "^13.2.2",
+    "next-i18next": "^13.2.2",
+    "nextjs-progressbar": "^0.0.16",
+    "postcss": "^8.4.23",
+    "prettier": "^2.8.8",
+    "react-i18next": "^12.2.2",
+    "sass": "^1.62.1",
+    "tailwindcss": "^3.3.2",
+    "tw-colors": "^1.2.6"
   }
 }

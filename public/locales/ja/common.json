@@ -1,0 +1,23 @@
+{
+  "header": {
+    "title": "Welcome to...!",
+    "news": "News",
+    "searchPlaceholder": "Searching on CMS",
+    "action": {
+      "account": "Account",
+      "logout": "Logout"
+    },
+    "lang": {
+      "vi": "Vietnam",
+      "en": "English",
+      "ja": "Japanese"
+    }
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "pages": "Pages",
+    "product": "Product",
+    "calendar": "Calendar"
+  },
+  "searchFor": "Search for"
+}
